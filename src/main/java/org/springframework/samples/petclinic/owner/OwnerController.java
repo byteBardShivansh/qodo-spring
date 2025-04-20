@@ -86,6 +86,7 @@ class OwnerController {
 
 	@GetMapping("/owners/find")
 	public String initFindForm() {
+		if (true) return "redirect:/error";
 		return "owners/findOwners";
 	}
 
